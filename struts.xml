@@ -1,0 +1,103 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts> 
+    <package name="default" extends="struts-default">
+        <action name="login" class="LoginAction">
+            <result name="sucess">Artist.jsp</result> 
+            <!--result name="input">Login.jsp</result--> 
+            <result name="error">Login-Error.jsp</result>
+            <!--result name="wait">processing.jsp</result>  
+            <interceptor-ref name="params"/>  
+            <interceptor-ref name="execAndWait"/-->           
+        </action> 
+        
+        <action name="Register"> 
+            <result name="success">Register.jsp</result>    
+        </action>
+        
+        <action name="register" class="RegisterAction">
+            <result name="input">Register.jsp</result> 
+            <result name="error">Register_Error</result>
+            <result name="success">Login.jsp</result> 
+        </action>  
+        
+        <action name="AR_Rahman" class="Reload">
+            <result name="success">AR_Song.jsp</result>
+            <result name="error">Login.jsp</result>
+        </action>
+        
+        <action name="U1">
+            <result name="success">u1_Song.jsp</result>
+        </action>
+        
+        <action name="gvp">
+            <result name="success">gv_Song.jsp</result>
+        </action>
+        
+        <action name="aalaporan">
+            <result name="success">Aalaporan.jsp</result>
+        </action>
+         
+        <action name="verithanam">
+            <result name="success">Verithanam.jsp</result>
+        </action>
+        
+        <action name="top_tucker">
+            <result name="success">Top Tucker.jsp</result>
+        </action>
+        
+        <action name="ella_pugazhum">
+            <result name="success">ella.jsp</result>
+        </action>
+        
+        <action name="hayati"> 
+            <result name="success">hayati.jsp</result>
+        </action>
+        
+        <action name="engeyum">
+            <result name="success">Engeyum.jsp</result>
+        </action>
+         
+        <action name="padichu">
+            <result name="success">padichu.jsp</result>
+        </action>
+        
+        <action name="unmela">
+            <result name="success">unmela.jsp</result>
+        </action>
+        
+        <action name="kadhal">
+            <result name="success">kadhal.jsp</result>
+        </action>
+        
+        <action name="bittu"> 
+            <result name="success">bittu.jsp</result>
+        </action>
+        
+        <action name="rowdy">
+            <result name="success">rowdy.jsp</result>
+        </action>
+         
+        <action name="kodana">
+            <result name="success">kodana.jsp</result>
+        </action>
+        
+        <action name="makka">
+            <result name="success">makka.jsp</result>
+        </action>
+        
+        <action name="machi">
+            <result name="success">machi_open.jsp</result>
+        </action>
+        
+        <action name="edhirthu"> 
+            <result name="success">edhirthu.jsp</result>
+        </action>
+        
+        <action name="logout" class="LoginAction" method="logout">
+        <result name="success">Login.jsp</result>
+        </action>
+    </package> 
+</struts> 

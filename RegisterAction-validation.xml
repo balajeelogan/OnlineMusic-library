@@ -1,0 +1,52 @@
+<!DOCTYPE validators PUBLIC "-//Apache Struts//XWork Validator 1.0.3//EN"
+    "http://struts.apache.org/dtds/xwork-validator-1.0.3.dtd">
+
+<validators>
+    <field name="First_Name">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="*First Name Required" />
+        </field-validator>
+    </field>
+    <field name="Last_Name">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="*Last Name Required" />
+        </field-validator>
+    </field>
+    <field name="User_Name">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="*User Name Required" />
+        </field-validator>
+    </field>
+    <field name="Mail">
+        <field-validator type="requiredstring">
+            <message key="*Email Required" />
+        </field-validator>
+        <field-validator type="email">
+            <message key="Invalid Mail" />
+        </field-validator>
+    </field>
+    <field name="Mobile">
+        <field-validator type="requiredstring">
+            <message key="*Mobile Number Required" />
+        </field-validator>
+        <field-validator type="int">
+            <param name="trim">true</param>
+            <message key="Enter a Correct Number" />
+        </field-validator>
+    </field>
+    <field name="password">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="*Password Required" />
+        </field-validator>
+    </field>
+    <field name="cpassword">
+        <field-validator type="requiredstring">
+            <param name="trim">true</param>
+            <message key="*Password Required" />
+        </field-validator>
+    </field>
+</validators>
